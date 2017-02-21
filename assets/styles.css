@@ -1,0 +1,431 @@
+/* Robin Wilkie
+HND Interactive Media 2016/17
+Altern8 Reality AR Game */
+
+
+/* stylesheet for Altern8 Reality Augmented Reality Game */
+
+
+/* FONTS
+font-family: 'Raleway', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+
+/* COLOURS
+Black #0B0B0B
+Yellow #FDE43F
+Grey #878787
+White #FFFFFF */
+
+html {
+    height: 100% !important;
+}
+
+body {
+    height: 100% !important;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif !important;
+    text-shadow: none !important;
+    text-align: center;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif !important;
+    text-shadow: none !important;
+}
+
+a {
+    outline: none !important;
+}
+
+span {
+    color: #FDE43F;
+}
+
+.content {
+    height: 100% !important;
+    background-color: #0B0B0B !important;
+    color: #FFFFFF !important;
+}
+
+.ui-content {
+    background-color: #0B0B0B;
+    height: 85vh;
+    color: #FFFFFF;
+}
+
+
+/*styling for headers */
+
+.headerOne {
+    background-color: #0B0B0B;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.headerTwo {
+    background-color: #0B0B0B;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.headerThree {
+    background-color: #0B0B0B;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* styling for slideout menu */
+
+.slideOut {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #0B0B0B;
+    color: #FFFFFF;
+    outline: none;
+}
+
+.slideOut a {
+    text-shadow: none;
+    text-decoration: none;
+    outline: none;
+    padding: 5%;
+    background-color: #FDE43F;
+    color: #0B0B0B;
+    margin-bottom: 5%;
+}
+
+#myPanel a {
+    color: #0B0B0B;
+    margin-bottom: 5%;
+}
+
+#myPanel a:hover {
+    color: #878787;
+}
+
+
+/* styling for buttons */
+
+.primaryBtn {
+    background-color: #FDE43F !important;
+    font-family: 'Ubuntu', sans-serif !important;
+    text-decoration: none !important;
+    text-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.primaryBtn:hover {
+    transform: scale(1.02);
+}
+
+.secondaryBtn {
+    background-color: #0B0B0B !important;
+    color: #FDE43F !important;
+    border: 2px solid #FDE43F !important;
+    font-family: 'Ubuntu', sans-serif !important;
+    text-decoration: none !important;
+    text-shadow: none !important;
+    outline: none !important;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.secondaryBtn:hover {
+    transform: scale(1.02);
+}
+
+button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+
+/* -------------------- Styles for SPLASH page -------------------- */
+
+.LargeLogo {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* styling for spinner */
+
+#spinnerWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+}
+
+#spinner1 {
+    display: block;
+    position: relative;
+    /*Put the spinner in the center of the screen */
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    /*adjust the margin to put the spinner dead center */
+    margin: -100px 0 0 -100px;
+    /*Make border transparent except for the top which then has a curve using the border radius */
+    border: 2px solid transparent;
+    border-top-color: #FDE43F;
+    border-radius: 50%;
+    z-index: 1000;
+    /*Add the spin animation to all spinner divs */
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#spinner2 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 2px solid transparent;
+    border-top-color: #FDE43F;
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#spinner3 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 2px solid transparent;
+    border-top-color: #FDE43F;
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#spinner4 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 2px solid transparent;
+    border-top-color: #FDE43F;
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#spinner5 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 2px solid transparent;
+    border-top-color: #FDE43F;
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#eight {
+    color: #FDE43F;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #000, 0 0 20px #FDE43F, 0 0 30px #FDE43F, 0 0 40px #FDE43F, 0 0 70px #FDE43F, 0 0 80px #FDE43F, 0 0 100px #FDE43F, 0 0 150px #FDE43F;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #FDE43F, 0 0 15px #FDE43F, 0 0 20px #FDE43F, 0 0 35px #FDE43F, 0 0 40px #FDE43F, 0 0 50px #FDE43F, 0 0 75px #FDE43F;
+    }
+}
+
+
+/* -------------------- Styles for INDEX page -------------------- */
+
+#indexOPtions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+}
+
+
+/* -------------------- Styles for REGISTER page -------------------- */
+
+#Register {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    text-align: center;
+}
+
+#Register hr {
+    width: 80%;
+    margin: 8%;
+}
+
+.registerSlideOut {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #0B0B0B;
+    color: #FFFFFF;
+    outline: none;
+}
+
+#registerPanel a {
+    color: #FDE43F;
+    text-shadow: none;
+    text-decoration: none;
+    outline: none;
+    margin: 5%;
+}
+
+#registerPanel a:hover {
+    color: #878787;
+}
+/* -------------------- Styles for LOGIN page -------------------- */
+
+#SignIn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    text-align: center;
+}
+
+#SignIn hr {
+    width: 80%;
+    margin-top: 8%;
+}
+
+#SignIn a {
+    color: #FDE43F;
+}
+
+
+/* -------------------- Styles for PASSWORD RECOVERY page -------------------- */
+
+#passwordRecovery {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+}
+
+#passwordRecovery h1{
+    margin-bottom: 15%;
+}
+
+/* -------------------- Styles for OPTIONS page -------------------- */
+
+#optionsMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+}
+
+
+/* -------------------- Styles for GAME page -------------------- */
+
+
+/* -------------------- Styles for HOW TO PLAY page -------------------- */
+
+#howToPlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+}
+
+/* -------------------- Styles for ABOUT page -------------------- */
+
+#aboutGame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+}
+
+/* -------------------- Styles for SCOREBOARD page -------------------- */
+
+
+/* -------------------- Styles for ADMIN page -------------------- */
