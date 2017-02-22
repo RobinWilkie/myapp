@@ -12,8 +12,44 @@ app.get('/', function(req,res) {
     res.sendFile(__dirname + '/index.html');
 });
 
-app.get('/sign-in', function(req,res) {
+app.get('/sign-in.html', function(req,res) {
     res.sendFile(__dirname + '/sign-in.html');
+});
+
+app.get('/sign-up', function(req,res) {
+    res.sendFile(__dirname + '/sign-up.html');
+});
+
+app.get('/about', function(req,res) {
+    res.sendFile(__dirname + '/about.html');
+});
+
+app.get('/admin', function(req,res) {
+    res.sendFile(__dirname + '/admin.html');
+});
+
+app.get('/game', function(req,res) {
+    res.sendFile(__dirname + '/game.html');
+});
+
+app.get('/how-to-play', function(req,res) {
+    res.sendFile(__dirname + '/how-to-play.html');
+});
+
+app.get('/new-password', function(req,res) {
+    res.sendFile(__dirname + '/new-password.html');
+});
+
+app.get('/options', function(req,res) {
+    res.sendFile(__dirname + '/options.html');
+});
+
+app.get('/password-reset', function(req,res) {
+    res.sendFile(__dirname + '/password-reset.html');
+});
+
+app.get('/scoreboard', function(req,res) {
+    res.sendFile(__dirname + '/scoreboard.html');
 });
 
 // catch 404 and forward to error handler

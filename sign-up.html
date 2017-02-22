@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Robin Wilkie -->
+    <!-- HND Interactive Media 2016/17 -->
+    <!-- Altern8 Reality AR Game -->
+    <title>Altern8 Reality Register Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+<div data-role="page" class="content">
+    <div data-role="header">
+        <div class="headerOne">
+            <a href="index.html" class="ui-icon-arrow-l ui-btn-icon-left" data-transition="flip"></a>
+            <h2>ALTERN<span>8</span>REALITY</h2>
+            <a href="#registerPanel" class="ui-icon-info ui-btn-icon-right"></a>
+        </div>
+    </div>
+
+    <!-- content for slide out menu -->
+    <div data-role="panel" data-position="right" data-display="push" data-theme="none" id="registerPanel">
+        <div id="registerSlideOut">
+            <p>Info for register page here</p>
+        </div>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <div id="Register">
+            <h1>REGISTER</h1>
+            <form name="registerForm">
+                <input type="text" name="txt-name" id="txt-name" placeholder="name" required>
+                <input type="email" name="txt-email" id="txt-email" placeholder="email" required>
+                <input type="text" name="txt-phone" id="txt-phone" placeholder="phone number" required>
+                <hr>
+                <input type="text" name="txt-username" id="txt-username" placeholder="choose a username" required>
+                <input type="password" name="txt-password" id="txt-password" placeholder="choose a password" required>
+                <input type="password" name="txt-password-confirm" id="txt-password-confirm" placeholder="confirm password" required>
+                <a href="#dlg-sign-up-sent" data-rel="popup" data-transition="pop" data-position-to="window">
+                    <button class="primaryBtn" type="submit">register</button>
+                </a>
+            </form>
+        </div>
+        <div data-role="popup" id="dlg-sign-up-sent" data-dismissible="false" style="max-width:400px;">
+            <div role="main" class="ui-content">
+                <h3>Thanks!</h3>
+                <p>You've created a new profile!</p>
+                <p>Click OK to sign-in</p>
+                <div class="mc-text-center">
+                    <a href="sign-in.html" class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">OK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+
+</html>
